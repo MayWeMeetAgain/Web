@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content="portfolio, IT, ITMO">
+		<meta name="description" content="this is the portfolio page">
+		<title>Ryannel Anna M33021</title>
+	</head>
+	<body>
+		<header>
+			<section>
+			<a href="https://t.me/AnnieRyannel">Telegram</a><br>
+			<a href="https://vk.com/id41808144">VK</a>
+			</section>
+			<section>
+				<h3><em>Hi, I'm Anya</em></h3>
+				I'm ITMO Student, software developer 
+				I'm excited to tell you something about me <br>
+				I hope you enjoy your time on this page. <br>
+			</section>
+			<nav>
+				<ul>
+					<li><a href="#About Me">About Me</a></li>
+					<li><a href="#Code">Code</a></li>
+					<li><a href="#Lang">Language knowlage</a></li>
+					<li><a href="#Hobby">Hobby</a></li>
+					<li><a href="#Goal">My current goal</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<article name="About Me">
+				<p> 
+				Cheers! My name is <strong>Anya Ryannel</strong>. I am 20 years old and all my life I live in the wonderful city - St. Petersburg, Russia. <br>
+				Now I am studying IT in my third year of bachelor's degree at <strong>ITMO University</strong><br>
+				</p>
+				<p>
+					Here are a few project topics that I managed to implement:
+					<ol> 
+						<li>key - value storage</li>
+						<li>extention for Visual Studio Code that translate comments and strings from selected text</li>
+						<li>OOP projects (Bank, Backups, etc.)</li>
+						<li>Algorithms (graphs, dynamic programming, minimazing functions...)</li>
+						<li>Simple visual novel</li>
+					</ol>
+				</p>
+			</article>
+			<aside>
+				<h3><del>Unusual information</del> Random facts</h3>
+				<section>
+					<h4>My mascot</h4>
+					<pre>
+     ▄▲▲▲
+ ▄█▀▌██████▄
+▐███▌███████▐▄
+ ▀██▌▄▐███▌▄▐██▐▌▀
+     █     █
+					</pre>	
+				</section>
+				<section>
+					<h4>My formula of success</h4>
+					sleep<sup>2</sup> < 0 </br>
+					You ask why? Because sleeping is unreal
+				</section>	
+				</section> 
+					<h4>Favorite quote</h4>
+					<q>- What if I fall? - Oh, darling, what if you fly</q>
+			</aside>
+			<section id="Code">
+				<h3>Random code</h3>
+				<pre><code>
+import math
+from . import Method
+
+class DichotomyMethod(Method.Method):
+    def Execute(self):
+        self.countIteration = 0
+        self.countFunctionCalc = 0
+        self.ranges = list()
+        a = self.a
+        b = self.b
+        self.ranges.append((a, b))
+
+        while(abs(a - b) > self.error):
+            middle = (a + b) / 2
+            x1 = middle - self.error / 3
+            x2 = middle + self.error / 3
+            f1 = self.GetFuncValue(x1)
+            f2 = self.GetFuncValue(x2)
+            if (f1 < f2):
+                b = x2
+            else:
+                a = x1
+            self.countIteration += 1
+            self.ranges.append((a, b))
+        return (a + b) / 2
+				</code></pre>
+			</section>
+			<section id="Lang">
+				<h3>Language knowlage</h3>
+					<ul>
+						<li>русский</li>
+						<li>english</li>
+						<li>deutsch</li>
+						<li>čeština</li>
+					</ul>
+			</section>
+			<section> 
+				<h3>Skills</h3>
+				<ul>
+					<li>Java SE</li>
+					<li>C#</li>
+					<li>C++</li>
+					<li>SQL</li>
+					<li>Git</li>
+					<li>bash</li>
+				</ul>
+			</section>
+			<section id="Hobby">
+				<h3>My hobby</h3>
+					<p>
+					Firstly, I am madly fond of hiking, especially water trips on rafts and kayaks <br>
+					The main role in this hobby was played by my school, <br>
+					because as a student of the 9th grade in <time datetime="2016-06-10">June 2016</time> I went on my first hike along the Vuokse River <br>
+					</p>
+					<p>
+					I also love to play tennis and do stretching
+					</p>
+			</section>
+			<section id="Goal">
+				<h3>My current goal</h3>
+					<h4>Learn</h4>
+					<dl>
+						<dt>HTML</dt>
+						<dd>HyperText Markup Language</dd>
+						<dt>CSS</dt>
+						<dd>Cascading Style Sheets</dd>
+					</dl>
+			</section>
+		</main>
+		<footer>
+			<section>
+				<a href="https://t.me/AnnieRyannel">Telegram</a><br>
+				<a href="https://vk.com/id41808144">VK</a><br>
+				<time datetime="2021-09-20">20.09.2021</time>
+			</section>
+		</footer>
+</html>
