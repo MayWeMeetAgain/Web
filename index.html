@@ -5,20 +5,24 @@
 		<meta name="keywords" content="portfolio, IT, ITMO, Ryannel">
 		<meta name="description" content="the portfolio page of Anya Ryannel">
 		<title>Ryannel Anna M33021</title>
+		<link href="CSS/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header>
-			<section>
-			<a href="https://t.me/AnnieRyannel">Telegram</a><br>
-			<a href="https://vk.com/id41808144">VK</a>
-			</section>
-			<section>
-				<h3><em>Hi, I'm Anya</em></h3>
-				I'm ITMO Student, software developer <br>
-				I'm excited to tell you something about me <br>
-				I hope you will enjoy your time on this page. <br>
-			</section>
 			<nav>
+			<a class="bubble" href="https://t.me/AnnieRyannel">Telegram</a><br>
+			<a class="bubble" href="https://vk.com/id41808144">Vkontakte</a>
+			</nav>
+			<div id="Intro">
+				<h3><em>Hi, I'm Anya</em></h3>
+				<p>I'm ITMO Student, software developer <br>
+				I'm excited to tell you something about me <br>
+				I hope you will enjoy your time on this page. <br></p>
+			</div>
+		</header>
+		<main>
+			<div class="menu">
+			<nav class="menu_list">
 				<ul>
 					<li><a href="#About Me">About Me</a></li>
 					<li><a href="#Code">Code</a></li>
@@ -26,10 +30,10 @@
 					<li><a href="#Hobby">Hobby</a></li>
 					<li><a href="#Goal">My current goal</a></li>
 				</ul>
-			</nav>
-		</header>
-		<main>
-			<article id="About Me">
+			</nav><br>
+			</div>
+			<div class="flex-container">
+			<article id="About Me" class="info-section" class="flex-container_item1" style="width:60%">
 				<p> 
 				Cheers! My name is <strong>Anya Ryannel</strong>. I am 20 years old and all my life I live in the wonderful city - <strong>St. Petersburg, Russia</strong>. <br>
 				Now I am studying IT in my third year of bachelor's degree at <strong>ITMO University</strong><br>
@@ -45,9 +49,9 @@
 					</ol>
 				</p>
 			</article>
-			<aside>
-				<h3><del>Unusual information</del> Random facts</h3>
-				<section>
+			<aside class="flex-container_item3">
+				<h3 class="bubble"><del>Unusual information</del> Random facts</h3>
+				<div>
 					<h4>My mascot</h4>
 					<pre>
      ▄▲▲▲
@@ -56,18 +60,18 @@
  ▀██▌▄▐███▌▄▐██▐▌▀
      █     █
 					</pre>	
-				</section>
-				<section>
+				</div>
+				<div>
 					<h4>My formula of success</h4>
 					sleep<sup>2</sup> < 0 </br>
 					You ask why? Because sleeping is unreal
-				</section>	
-				</section> 
+				</div>	
+				<div> 
 					<h4>Favorite quote</h4>
 					<q>- What if I fall? - Oh, darling, what if you fly</q>
-			</aside>
-			<section id="Code">
-				<h3>Random code</h3>
+				</div>	
+				<div id="Code" class="sec">
+				<h4>Random code</h4>
 				<pre><code>
 import math
 from . import Method
@@ -95,29 +99,75 @@ class DichotomyMethod(Method.Method):
             self.ranges.append((a, b))
         return (a + b) / 2
 				</code></pre>
-			</section>
-			<section id="Lang">
-				<h3>Language knowlage</h3>
+			</div>
+			</aside>
+			<section class="flex-container_item2">
+			<h3 class="info-section_header">Skills</h3>
+			<div class="skills-container" class="flex-container.item2">
+			<div id="Lang" class="info-section" class="sec">
+				<h3 class="info-section_header">Language knowlage</h3>
 					<ul>
-						<li>русский</li>
-						<li>english</li>
-						<li>deutsch</li>
-						<li>čeština</li>
+						<li class="skill">русский</li>
+						<li class="skill">english</li>
+						<li class="skill">deutsch</li>
+						<li class="skill">čeština</li>
 					</ul>
-			</section>
-			<section> 
-				<h3>Skills</h3>
+			</div>
+			<div id="Lang" class="info-section" class="sec">
+				<h3 class="info-section_header">Sport</h3>
+					<ul>
+						<li class="skill">tennis</li>
+						<li class="skill">gymnastics</li>
+						<li class="skill">volleyball</li>
+						<li class="skill">hiking</li>
+					</ul>
+			</div>
+			<div id="Lang" class="info-section" class="sec">
+				<h3 class="info-section_header">Other</h3>
+					<ul>
+						<li class="skill">Math</li>
+						<li class="skill">Physics</li>
+						<li class="skill">Chemistry</li>
+					</ul>
+			</div>
+			<div id="Lang" class="info-section" class="sec">
+				<h3 class="info-section_header">Web Labs done</h3>
+					<ul>
+						<li class="skill">Lab1</li>
+						<li class="skill">Lab2</li>
+						<li class="skill">Lab3 (in progress)</li>
+						<li class="skill">Lab4 (studing for)</li>
+					</ul>
+			</div>
+			<div class="info-section" class="sec"> 
+				<h3 class="info-section_header">Skills</h3>
 				<ul>
-					<li>Java SE</li>
-					<li>C#</li>
-					<li>C++</li>
-					<li>SQL</li>
-					<li>Git</li>
-					<li>bash</li>
+					<li class="skill">Java SE</li>
+					<li class="skill">C#</li>
+					<li class="skill">C++</li>
+					<li class="skill">SQL</li>
+					<li class="skill">Git</li>
+					<li class="skill">bash</li>
+					<li class="skill">OOP</li>
+					<li class="skill">Python</li>
 				</ul>
+			</div>
+			<div id="Goal" class="info-section" class="sec">
+				<h3 class="info-section_header">My current goal</h3>
+					<h4>Learn</h4>
+					<dl>
+						<dt><em>HTML</em></dt>
+						<dd>HyperText Markup Language</dd>
+						<dt><em>CSS</em></dt>
+						<dd>Cascading Style Sheets</dd>
+					</dl>
+			</div>
+			</div>
 			</section>
-			<section id="Hobby">
-				<h3>My hobby</h3>
+			</div>
+			<section id="Hobby" class="info-section" style="width:60%;">
+				<img src="./images/hobby.jpg" width="240" align="left" hspace="20" style="border-radius: 20px">
+				<h3 class="info-section_header">My hobby</h3>
 					<p>
 					Firstly, I am madly fond of hiking, especially water trips on rafts and kayaks <br>
 					The main role in this hobby was played by my school, <br>
@@ -127,22 +177,19 @@ class DichotomyMethod(Method.Method):
 					I also like to play tennis and do stretching - sport gives strength for work)
 					</p>
 			</section>
-			<section id="Goal">
-				<h3>My current goal</h3>
-					<h4>Learn</h4>
-					<dl>
-						<dt><em>HTML</em></dt>
-						<dd>HyperText Markup Language</dd>
-						<dt><em>CSS</em></dt>
-						<dd>Cascading Style Sheets</dd>
-					</dl>
-			</section>
+			<section class="flex" style="width:60%;">
+				<div class="item img1"></div>
+				<div class="item img2"></div>
+				<div class="item img3"></div>
+				<div class="item img4"></div>
+				<div class="item img5"></div>
+</div>
 		</main>
 		<footer>
-			<section>
+			<nav>
 				<a href="https://t.me/AnnieRyannel">Telegram</a><br>
 				<a href="https://vk.com/id41808144">VK</a><br>
 				<time datetime="2021-09-20">20.09.2021</time>
-			</section>
+			</nav>
 		</footer>
 </html>
