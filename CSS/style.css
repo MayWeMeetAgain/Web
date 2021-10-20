@@ -176,7 +176,7 @@ h3 {
 	transition: flex 300ms ease;
 }
 .item:hover {
-	flex: 0.1 0.1 300px;
+	flex: 300px;
 	flex-direction: row;
 	background-size: 100% 100%;
 }
