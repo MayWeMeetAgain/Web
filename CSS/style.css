@@ -1,20 +1,30 @@
 body {
-	background-color: #490E84;
 	font-family: Snell Roundhand, cursive;
 	font-size: large;
 	margin: 0;
+	background-color: #200030;
 }
 
 main {
-	background-color: #C8C8C8; 
+	margin: auto;
 }
 
+@media (min-width: 1300px) {
 header{
-	height: 630px;
+	height: 610px;
 	background-image: url(../images/Me.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	flex-direction: row;
+}
+}
+
+
+@media (min-width: 1300px){
+
+.main-pic {
+opacity: 0%;	
+}
 }
 
 #Intro {
@@ -38,18 +48,25 @@ header{
 
 .menu {
     align-items: center;
-	height: 50px;
 	width:100%;
 	background:#490E84; 
+	margin: 0;
+}
+
+.f-menu {
+	z-index: 9999; position: fixed; left: 0; top: 0; width: 100%;
+}
+
+.menu_list {
+height: 30px;
 }
 
 .menu_list ul {
   list-style: none; 
   margin: 0; 
-  position: fixed;
+
   background: #490E84;
   width: 100%;
-  opacity: 0.7; 
   z-index: 1000;
 }
 
@@ -71,13 +88,18 @@ a[href] {
 
 .info-section {
 	color: #490E84;
-	box-shadow: 0 0 5px #490E84;
+	#box-shadow: 0 0 10px #FFFF00;
 	background-color: #BBABCB;
 	padding: 20px; 
 	border-radius: 20px;
 }
 
 .info-section_header {
+	text-align: center;
+}
+
+.section-header {
+	color: #FFFF00;
 	text-align: center;
 }
 
@@ -100,6 +122,7 @@ footer {
 	border-radius: 50%;
 	padding: 5px;
 	text-align: center;
+	width: 100px;
 }
 
 .skill {
@@ -109,9 +132,16 @@ footer {
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    display: inline-block;
+	list-style-type: none;
 	background-color: #FFFF00
 	
+}
+
+.skill-box {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	max-width: 200px;
 }
 
 strong {
@@ -123,13 +153,18 @@ h3 {
 	align-items: center;
 }
 
+.skill-item {
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
 .skills-container {
-    max-height: 800px;
+    #max-height: 800px;
     display: flex;
     flex-wrap: wrap;
-	flex-direction: column;
-    justify-content: left;
-	width: 40%;
+	flex-direction: row;
+    justify-content: center;
 }
 
 
@@ -172,25 +207,26 @@ h3 {
 
 .item {
 	height:300px;
-	flex:20%; 
+	flex:40%; 
 	transition: flex 300ms ease;
+	border-radius: 20px;
 }
 .item:hover {
-	flex: 300px;
+	flex: 50%;
 	flex-direction: row;
 	background-size: 100% 100%;
 }
 
 .img1 { background: url(../images/galery1.jpg) 0 0 no-repeat; }
-.img2 { background: url(../images/galary2.jfif) 0 0 no-repeat; }
+.img2 { background: url(../images/galery2.jpg) 0 0 no-repeat; }
 .img3 { background: url(../images/galery3.jpg) 0 0 no-repeat; }
-.img4 { background: url(../images/galary.jpg) 0 0 no-repeat; }
+.img4 { background: url(../images/galery.jpg) 0 0 no-repeat; }
+.img5 { background: url(../images/galery4.jfif) 0 0 no-repeat; }
 
 
-div, section, aside, article {
-	margin-top: 10px;
-	margin-right: 5px;
-	margin-left: 5px;
+section, aside, article {
+	margin: 50px auto;
+	max-width: 1000px;
 }
 
 
