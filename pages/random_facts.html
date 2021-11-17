@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content="portfolio, IT, ITMO, Ryannel">
+		<meta name="description" content="the portfolio page of Anya Ryannel">
+		<title>Ryannel Anna M33021</title>
+		<link href="../CSS/page_style.css" rel="stylesheet">
+		<link href="../CSS/style.css" rel="stylesheet">
+		<script src="../JS/page_load.js"></script>
+	</head>
+	<body>
+	<header class="page_header">
+	<div class="f-menu">
+			<nav class="menu_list">
+				<ul>
+					<li><a href="../index.html">About Me</a></li>
+					<li><a href="random_facts.html">Random Facts</a></li>
+					<li><a href="hobby.html">Hobby</a></li>
+					<li><a href="table_constr.html">Table Maker</a></li>
+				</ul>
+			</nav><br>
+			</div>
+	</header>
+	<main>
+	
+	<section class="box">
+				<div class="info-section item">
+					<h4>My mascot</h4>
+					<pre>
+     ▄▲▲▲
+ ▄█▀▌██████▄
+▐███▌███████▐▄
+ ▀██▌▄▐███▌▄▐██▐▌▀
+     █     █
+					</pre>
+				</div>
+				<div class="info-section item">
+					<h4>My formula of success</h4>
+					sleep<sup>2</sup> < 0 </br>
+					You ask why? Because sleeping is unreal
+				</div>
+				<div class="info-section item">
+					<h4>Favorite quote</h4>
+					<q>- What if I fall? - Oh, darling, what if you fly</q>
+				</div>
+				<div id="Code" class="info-section item">
+				<h4>Random code</h4>
+				<pre><code>
+import math
+from . import Method
+
+class DichotomyMethod(Method.Method):
+    def Execute(self):
+        self.countIteration = 0
+        self.countFunctionCalc = 0
+        self.ranges = list()
+        a = self.a
+        b = self.b
+        self.ranges.append((a, b))
+		while(abs(a - b) > self.error):
+            middle = (a + b) / 2
+            x1 = middle - self.error / 3
+            x2 = middle + self.error / 3
+            f1, f2 = self.GetFuncValue(x1), self.GetFuncValue(x2)
+            if (f1 < f2):
+                b = x2
+            else: a = x1
+            self.countIteration += 1
+            self.ranges.append((a, b))
+        return (a + b) / 2
+				</code></pre>
+			</div>
+			</section>
+	</main>
+	<footer>
+		<nav>
+			<a href="https://t.me/AnnieRyannel">Telegram</a><br>
+			<a href="https://vk.com/id41808144">VK</a><br>
+			<time datetime="2021-09-20">20.09.2021</time>
+		</nav>
+		<div id="load_time"> </div>
+	</footer>
+	</body>
+</html>
